@@ -138,3 +138,5 @@ TEMPLATE_DIRS = (
 STATICFILES_DIRS = (
     os.path.join(MAIN_DIR, 'static'),
     )
+
+STATIC_ROOT = 'staticfiles'
