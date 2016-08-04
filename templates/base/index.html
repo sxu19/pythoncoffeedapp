@@ -44,12 +44,13 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">C O F F E E D</a>
+                <a class="navbar-brand page-scroll" href="/">C O F F E E D</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                    {% block navigation %}
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
@@ -62,12 +63,15 @@
                     <li>
                         <a class="page-scroll" href="#contact">Get Invited</a>
                     </li>
+                    {% endblock %}
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
+
+    {% block main_content %}
 
     <!-- Header -->
     <header>
@@ -136,7 +140,7 @@
                 <div class="col-sm-4">
                     <div class="team-member">
                         <img src="{% static "img/team/2.jpg" %}" class="img-responsive img-circle" alt="">
-                        <h4>LEric Neuman</h4>
+                        <h4>Eric Neuman</h4>
                         <p class="text-muted">Web & Business Development</p>
                         <ul class="list-inline social-buttons">
                             <li><a href="https://twitter.com/eric_neuman"><i class="fa fa-twitter"></i></a>
@@ -194,11 +198,13 @@
         </div>
     </section>
 
+    {% endblock %}
+
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2016</span>
+                    <span class="copyright">Copyright &copy; Coffeed 2016</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
