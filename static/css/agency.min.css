@@ -880,6 +880,10 @@ body {
     height:267px;
 }
 
+.wide-map { 
+    height:400px;
+}
+
 .header-buffer{
     height:70px;
 }

@@ -1,7 +1,14 @@
 dj-database-url==0.4.1
 dj-static==0.0.6
 Django==1.9.8
+django-bootstrap-pagination==1.6.1
+django-bootstrap3==7.0.1
+django-etc==0.9.1
+django-geoposition==0.3.0
+django-sitegate==0.10.3
 django-toolbelt==0.0.1
+django-widget-tweaks==1.4.1
+djangoaddattr==0.0.1
 gunicorn==19.6.0
 psycopg2==2.6.2
 static3==0.7.0

@@ -30,6 +30,16 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+TEMPLATE_CONTEXT_PROCESSORS = ("django.contrib.auth.context_processors.auth",
+"django.core.context_processors.debug",
+"django.core.context_processors.i18n",
+"django.core.context_processors.media",
+"django.core.context_processors.static",
+"django.core.context_processors.tz",
+"django.contrib.messages.context_processors.messages",
+"django.core.context_processors.request"
+)
+
 
 # Application definition
 
@@ -41,6 +51,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
+    'addattr',
+    'widget_tweaks',
+    'sitegate',
+    'bootstrap3',
+    'geoposition',
+    'bootstrap_pagination',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -143,3 +159,5 @@ STATICFILES_DIRS = (
     )
 
 STATIC_ROOT = 'staticfiles'
+
+GEOPOSITION_GOOGLE_MAPS_API_KEY = 'AIzaSyDLUJ1arYRD3MyA6RI9mLwy9Y2cAZrutTM'
